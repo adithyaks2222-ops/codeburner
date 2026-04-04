@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+node_modules
+.vscode-test/
+*.vsix
+.env
+=======
 # Logs
 logs
 *.log
@@ -137,3 +143,4 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+>>>>>>> 8da462659a7b56d31e70ffe96deba6991942ade1

@@ -1,0 +1,50 @@
+{
+  "name": "codeburner",
+  "displayName": "CodeBurner 🔥",
+  "description": "AI-powered savage code roasting with insights, suggestions, and scoring.",
+  "version": "0.0.1",
+  "publisher": "adithya",
+
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:python",
+    "onLanguage:java",
+    "onLanguage:c",
+    "onLanguage:cpp"
+  ],
+
+  "main": "./extension.js",
+
+  "contributes": {
+    "commands": [
+      {
+        "command": "codeburner.burnCode",
+        "title": "🔥 CodeBurner: Burn My Code"
+      }
+    ]
+  },
+
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+
+  "devDependencies": {
+    "@types/vscode": "^1.110.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.39.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
